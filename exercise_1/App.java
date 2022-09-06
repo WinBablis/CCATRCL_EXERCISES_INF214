@@ -2,56 +2,56 @@ public class App {
     public static void main(String[] args) {
 
         // Character Class
-        Character knight = new Character();
+        Character support = new Character();
 
-        knight.strength = 10;
-        knight.agility = 5;
-        knight.intelligence = 0;
-        knight.name = "Chen";
-        knight.sayMyName();
+        support.strength = 18;
+        support.agility = 5;
+        support.intelligence = 10;
+        support.name = "Aloy";
+        support.sayMyName();
 
         Character mage = new Character();
 
-        mage.strength = 0;
-        mage.agility = 5;
+        mage.strength = 10;
+        mage.agility = 8;
         mage.intelligence = 10;
-        mage.name = "Akasha";
+        mage.name = "Beidou";
         mage.sayMyName();
 
-        Character thief = new Character();
+        Character core = new Character();
 
-        thief.strength = 5;
-        thief.agility = 10;
-        thief.intelligence = 0;
-        thief.name = "Gondar";
-        thief.sayMyName();
+        core.strength = 20;
+        core.agility = 10;
+        core.intelligence = 10;
+        core.name = "Madame Ping";
+        core.sayMyName();
 
         // Enemy Class
-        Enemy boss = new Enemy();
+        Enemy slime = new Enemy();
 
-        boss.damage = 50;
-        boss.health = 500;
-        boss.armor = 100;
-        boss.hasMagicImmunity = true;
-        boss.name = "Roshan";
-        boss.enemyDialogue();
+        slime.damage = 20;
+        slime.health = 60;
+        slime.armor = 60;
+        slime.hasMagicImmunity = false;
+        slime.name = "Geo";
+        slime.enemyDialogue();
 
-        Enemy skeleton = new Enemy();
+        Enemy hilichurls = new Enemy();
 
-        skeleton.damage = 5;
-        skeleton.health = 10;
-        skeleton.armor = 5;
-        skeleton.hasMagicImmunity = false;
-        skeleton.name = "Common Skeleton Warrior";
-        skeleton.enemyDialogue();
+        hilichurls.damage = 40;
+        hilichurls.health = 100;
+        hilichurls.armor = 80;
+        hilichurls.hasMagicImmunity = true;
+        hilichurls.name = "Hilichurl Berseker";
+        hilichurls.enemyDialogue();
 
-        Enemy dragon = new Enemy();
+        Enemy abyss = new Enemy();
 
-        dragon.damage = 40;
-        dragon.health = 400;
-        dragon.armor = 75;
-        dragon.hasMagicImmunity = false;
-        dragon.name = "Ancient Wyvern";
-        dragon.enemyDialogue();
+        abyss.damage = 80;
+        abyss.health = 100;
+        abyss.armor = 90;
+        abyss.hasMagicImmunity = true;
+        abyss.name = "Abyss Lector";
+        abyss.enemyDialogue();
     }
 }
